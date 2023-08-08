@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat photo app</title>
+</head>
+<body>
+    <main>
+        <!--Las etiquetas para títulos-->
+        <h1>
+            This is my cat photo app
+        </h1>
+        <section>
+            <h2>
+                Cat Photos
+            </h2>
+            <p>¿Do you like cats as much as being alone?
+                See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery
+            </p>
+            <a href="https://freecatphotoapp.com "><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back"></a>
+        </section>
+        <section>
+            <h2>Cat Lists</h2>
+            <h3>Things cats love:</h3>
+            <ul><!--unordered list-->
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            <figure>
+                <img  src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                <figcaption>Cats <em>love</em> lasagna.</figcaption>
+            </figure>
+            <h3>Top 3 things cats hate:</h3>
+            <ol><!--ordered list-->
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol> 
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+            </figure>
+            <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+        </section>
+        <section>
+            <h2>Cat form</h2>
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <fieldset>
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label> <!--Label BUSCAR funcionalidad, si no estoy mal, es para asociar el texto con el elemento en si-->
+                    <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What's your cat's personality?</legend>
+                    <input type="checkbox" id="loving" name="personality" value="loving" checked> <label for="loving">Loving</label> <!--el input y el label se asocian mediante el d y el for-->
+                    <input type="checkbox" id="lazy" name="personality" value="laxy"> <label for="lazy">Lazy</label><!--Es mejor práctica implementar el atributo value con cualuier checkbox o radio buttons-->
+                    <input type="checkbox" id="energetic" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+                </fieldset>
+
+                <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                <button type="submit">Submit</button>
+                
+            </form>
+        </section>
+
+    </main>
+    <footer><p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p></footer>
+    
+    
+</body>
+</html>

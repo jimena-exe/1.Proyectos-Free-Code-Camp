@@ -1,0 +1,45 @@
+h1,h4{
+    text-align:center;
+  }
+  .marker{
+    height: 25px;
+    width: 200px;
+    margin: 10px auto; /*margin tiene dos valores, primero para top y bottom, segundo para left y right*/
+  }
+  .one{
+    background: linear-gradient(rgb(116, 60, 119)0%,rgb(190, 82, 183)50%,rgb(138, 0, 73)100%); /*se puede cambiar el porcentaje de un color sobre toda la línea poniendole el porcentaje luego del color, para que ocupe por ej el 75%
+    cuando no se pone, el linear-gradient lo calcula por si mismo, sucede lo mismo con el gradientDirection que es el 180 degree, si no se pone, lo inicia en este valor*/
+    /*box-shadow: 5px 5px red; /*aplica una o más sombras al rededor de cualquier elemento (offsetX offsetY Color) si quiero ponerlos en otra zona uso valores negativos*/
+    box-shadow: 0 0 20px 0 rgba(83,14,14,0.8);
+  }/*También, la primer parte de gradientDirection, en este caso el 90deg, se puede cambiar por 180deg p.ej, para que tome más espacio*/
+
+  .two{
+    background: linear-gradient(180deg, #55680D, #71F53E,#116C31);
+    /*box-shadow: 5px 5px 5px green; /*va así (offsetX offsetY blurRadius Color)*/
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+  }
+  .three{
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%),hsl(240, 56%, 42%));
+    /*box-shadow: 0 0 0 5px blue;/*va así (offsetX offsetY blurRadius spreadRadius color)*/
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+  }
+  .container{
+    background-color: rgb(255, 255, 255);
+  }
+  .sleeve{
+    width:110px;
+    height:25px;
+    background-color: white;
+    /*opacity: 0.5;*/ /*una forma de poner opacidad*/
+    background-color:rgba(255,255,255,50%); /*otra forma es con rgba, la a, es de alpha channel, va de 0 a 1.0*/
+    /*border-left: width style color;*/
+    border-left: 10px double rgba(0,0,0,75%);
+  }
+  .cap{
+    width: 60px;
+    height:25px;
+  }
+
+  .cap,.sleeve /*así se toman dos clases*/{
+    display: inline-block;
+  }
