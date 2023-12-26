@@ -1,0 +1,16 @@
+body {
+  background-color: cadetblue;
+  color: aliceblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+form {
+  background-color: #1b1b32;
+  display: flex;
+  flex-direction: column;
+}
+
+.datos {
+  display: flex;
+  flex-direction: column;
+}
