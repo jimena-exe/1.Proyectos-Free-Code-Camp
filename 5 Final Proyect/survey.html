@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="surveyStyles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
@@ -13,34 +13,53 @@
     </p>
     <form action="post" id="survey-form">
       <fieldset>
-        <label for="name">Name</label>
-        <input type="text" name="" id="name-label" />
-        <label for="email">Email</label>
-        <input type="email" id="email-label" />
-        <!--tiene type text-->
-        <label for="number">Age(optional)</label>
-        <input
-          type="number"
-          name=""
-          id="number-label"
-          min="3"
-          max="8"
-          required
-        />
+        <label for="name" id="name-label"
+          >Name
+          <input type="text" name="" id="name" required placeholder="Nombre" />
+        </label>
+
+        <label for="email" id="email-label"
+          >Email
+          <input type="email" id="email" placeholder="Email" required />
+          <!--tiene type text-->
+        </label>
+
+        <label for="number" id="number-label"
+          >Age(optional)
+          <input
+            type="number"
+            name=""
+            id="number"
+            min="3"
+            max="8"
+            placeholder="Edad"
+            required
+          />
+        </label>
       </fieldset>
       <fieldset>
         <label for="dropdown"
-          >Which option best describes your current role?</label
-        >
-        <select name="" id="dropdown"></select>
-        <label for="">
-          <input type="radio" name="attribute" id="" />Definitely
+          >Which option best describes your current role?
+          <select name="" id="dropdown">
+            <option value="Opcion 1">Estudiante</option>
+            <option value="Opcion 2">Egresado</option>
+            <option value="Opcion 3">Profesional</option>
+            <option value="Opcion 4">Desempleado</option>
+          </select>
         </label>
-        <label for="">
-          <input type="radio" name="attribute" id="" />Maybe
+        <label for="radio1">
+          <input
+            type="radio"
+            name="attribute"
+            id="radio1"
+            value="1"
+          />Definitely
         </label>
-        <label for="">
-          <input type="radio" name="attribute" id="" />Not sure
+        <label for="radio2">
+          <input type="radio" name="attribute" id="radio2" value="2" />Maybe
+        </label>
+        <label for="radio3">
+          <input type="radio" name="attribute" id="radio3" value="3" />Not sure
         </label>
       </fieldset>
       <fieldset>
