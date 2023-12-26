@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="surveyStyles.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form action="post" id="survey-form">
+      <fieldset>
+        <label for="name">Name</label>
+        <input type="text" name="" id="name-label" />
+        <label for="email">Email</label>
+        <input type="email" id="email-label" />
+        <!--tiene type text-->
+        <label for="number">Age(optional)</label>
+        <input
+          type="number"
+          name=""
+          id="number-label"
+          min="3"
+          max="8"
+          required
+        />
+      </fieldset>
+      <fieldset>
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        >
+        <select name="" id="dropdown"></select>
+        <label for="">
+          <input type="radio" name="attribute" id="" />Definitely
+        </label>
+        <label for="">
+          <input type="radio" name="attribute" id="" />Maybe
+        </label>
+        <label for="">
+          <input type="radio" name="attribute" id="" />Not sure
+        </label>
+      </fieldset>
+      <fieldset>
+        <input type="checkbox" name="" id="" value="attribute" />
+        <input type="checkbox" name="" id="" value="attribute" />
+        <input type="checkbox" name="" id="" value="attribute" />
+        <input type="checkbox" name="" id="" value="attribute" />
+        <input type="checkbox" name="" id="" value="attribute" />
+        <input type="checkbox" name="" id="" value="attribute" />
+        <input type="checkbox" name="" id="" value="attribute" />
+        <input type="checkbox" name="" id="" value="attribute" />
+        <input type="checkbox" name="" id="" value="attribute" />
+        <input type="checkbox" name="" id="" value="attribute" />
+        <input type="checkbox" name="" id="" value="attribute" />
+      </fieldset>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <button id="submit"></button>
+    </form>
+  </body>
+</html>
